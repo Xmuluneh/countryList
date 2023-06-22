@@ -11,12 +11,12 @@ export const COLUMNS = [
   },
   {
     Headers: 'Area',
-    Fotter: 'Area',
+    Footer: 'Area',
     accessor: 'area',
   },
   {
     Headers: 'Independent',
     Footer: 'Independent',
-    accesor: 'independent',
+    accessor: 'independent',
   },
 ];

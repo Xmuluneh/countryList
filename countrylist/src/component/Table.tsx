@@ -1,11 +1,14 @@
 import React, { useMemo } from 'react';
 import { useTable } from 'react-table';
-import Datat from './Datat.json';
 import { COLUMNS } from './Columns';
+import { Country } from '../interface/Interface';
+type props = {
+  data: Country;
+};
 
-const Table = () => {
+const Table = (props: props) => {
   const columns = useMemo(() => COLUMNS, []);
-  const data = useMemo(() => Datat, []);
+  const data = useMemo(() => props.data, [props.data]); //catching the data
   const {
     getTableProps,
     getTableBodyProps,
@@ -15,7 +18,7 @@ const Table = () => {
     prepareRow,
   } = useTable({
     columns,
-    data: data,
+    data,
   });
 
   return (

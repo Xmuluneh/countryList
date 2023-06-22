@@ -1,12 +1,12 @@
 import React,{useMemo} from "react"
 import { useTable,useSortBy } from 'react-table'
-import Datat from './Datat.json'
+//import  from './Datat.json'
 import { COLUMNS } from './Columns'
 
 
 const SortingTable = () => {
   const columns = useMemo(()=> COLUMNS,[])
-  const data = useMemo(() => Datat, []) 
+  const data = useMemo(() => Data, []) 
   
   const {
     getTableProps,
