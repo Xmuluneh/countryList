@@ -25,6 +25,6 @@ Create React app `county list`  using **TypeScript**.
 
 `$ npm install prettier --save-dev --save-exact`
 
-To format 
+To format globally the app ./
 
 `$ npx prettier --write .`
