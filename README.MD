@@ -14,12 +14,14 @@
   
 
 ## Installation And Setup  
-Create React app `county list`  using **TypeScript**.
+This app is created using  create react app `county-list`  using **TypeScript**.
 
 `$ npx create-react-app county-list --template typescript`
 
-## Fetch the endpoints
-`$ npm install axios`
+For installing the package run 
+
+`$ npm install `
+
 ## EsLint and Pretties Setup
 `$ npm install eslint-config-prettier --save-dev`
 
