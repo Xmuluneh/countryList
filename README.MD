@@ -21,6 +21,6 @@ Create React app `county list`  using **TypeScript**.
 ## Fetch the endpoints
 `$ npm install axios`
 ## EsLint and Pretties Setup
-`$ npm install eslint --save-dev`
+`$ npm install eslint-config-prettier --save-dev`
 
 `$ npm install prettier --save-dev --save-exact`
