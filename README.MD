@@ -24,3 +24,7 @@ Create React app `county list`  using **TypeScript**.
 `$ npm install eslint-config-prettier --save-dev`
 
 `$ npm install prettier --save-dev --save-exact`
+
+To format 
+
+`$ npx prettier --write .`
