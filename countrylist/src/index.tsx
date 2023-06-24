@@ -3,17 +3,13 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import Test from './component/Test';
-import Table from './component/Table';
+
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 );
-const obj = { name: 'Aaron', age: 29, country: 'Addis Ababa' };
 root.render(
   <React.StrictMode>
     <App />
-    <Test {...obj} />
-    <Table></Table>
   </React.StrictMode>
 );
 
