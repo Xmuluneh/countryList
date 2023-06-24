@@ -1,3 +1,11 @@
+/* This code is defining a reusable table component using the `useTable`, `useSortBy`, and
+`usePagination` hooks from the `react-table` library. The component takes in `columns`, `data`, and
+`noDataMsg` as props and renders a table with sorting, pagination, and page size options. The
+`useTable` hook is used to create the table instance and the returned properties and methods are
+used to render the table. The `headerGroups` and `prepareRow` properties are used to render the
+table header and body, respectively. The `canPreviousPage`, `canNextPage`, `gotoPage`, `nextPage`,
+`previousPage`, `setPageSize`, `pageIndex`, and `pageSize` properties and methods are used to render
+the pagination and page size options. */
 import React from 'react';
 import { useTable, useSortBy, usePagination } from 'react-table';
 interface TableProps {
