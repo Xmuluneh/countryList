@@ -1,7 +1,8 @@
 # React Country List Table 
 ## Framework and languages 
 - React
-- TypeScript  
+- TypeScript
+## Styling  
 - BootStrap
   
 Create React app `county list`
