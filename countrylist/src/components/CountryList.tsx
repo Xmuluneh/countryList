@@ -1,18 +1,17 @@
 import React, { useEffect, useState } from 'react';
 import { Country } from '../interface/Interface';
-import { ApiHook } from '../api/apihook';
+import { ApiHook } from '../api/ApiHook';
 import { apiUrl } from '../util/path';
 import { Table } from './Table';
 import { Loading } from './Loading';
-import { error } from 'console';
 
-function CountryList() {
+export const CountryList = () => {
   const [countryData, setCountryData] = useState<Array<Country>>([]);
   const { api, isLoading } = ApiHook();
   useEffect(() => {
     api(apiUrl, { method: 'GET' })
       .then((response) => {
-        setCountryData(Response?.data);
+        setCountryData(response?.data);
       })
       .catch((error) => console.log(error));
   }, []);
@@ -34,12 +33,19 @@ function CountryList() {
     []
   );
   if (isLoading) {
-    return <div className="container"></div>;
+    return (
+      <div className="container">
+        <Loading />
+      </div>
+    );
   }
   return (
     <div className="container">
-      <Table columns={columns} data={countryData} />
+      <Table
+        columns={columns}
+        data={countryData}
+        noDataMsg={'No Record Found'}
+      />
     </div>
   );
-}
-export default CountryList;
+};

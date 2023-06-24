@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import { useState} from 'react';
 import axios from 'axios';
 
 /**
@@ -6,7 +6,7 @@ import axios from 'axios';
  *  and renders it in a table using
  * the useState and useEffect hooks.
  */
-function ApiHook() {
+export const ApiHook = () => {
   const [isLoading, setIsLading] = useState(false);
   const [error, setError] = useState({});
 
@@ -24,6 +24,4 @@ function ApiHook() {
     error,
     isLoading,
   };
-}
-
-export default ApiHook;
+};
