@@ -14,6 +14,7 @@ export const ApiHook = () => {
     try {
       setIsLading(true);
       const response = await axios.get(url, option);
+      setIsLading(false)
       return response;
     } catch (e) {
       setError({ e });
