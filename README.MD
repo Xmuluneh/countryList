@@ -16,7 +16,7 @@
 ## Installation And Setup  
 Create React app `county list`  using **TypeScript**.
 
-`$ npx create-react-app countylist --template typescript`
+`$ npx create-react-app county-list --template typescript`
 
 ## Fetch the endpoints
 `$ npm install axios`
