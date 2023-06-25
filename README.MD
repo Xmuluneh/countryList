@@ -4,12 +4,12 @@
   
  * Fetch the data from an API using the `ApiHook` custom hook.
 
-* On UI a table is displayed for the fetch data.
+* the fetch data on UI in table format .
 * The table is  sortable alphabetically by country name (ascending, descending). 
 * The table is filter(s) using column filter with the following  parameters :
        <ol>
-     <li>That are country's smaller than `Lithuania` by area.
-      <li>That are country's  in `Oceania` region.
+     <li>That are country's smaller than Lithuania by area.
+      <li>That are country's  in Oceania region.
       </ol>
 
 ## Framework and Languages 
