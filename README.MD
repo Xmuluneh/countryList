@@ -6,7 +6,7 @@
 
 * On UI a table is displayed for the fetch data.
 * The table is  sortable alphabetically by country name (ascending, descending). 
-* The table is filter(s) using column filter with the bellows parameters :
+* The table is filter(s) using column filter with the following  parameters :
        <ol>
      <li>That are country's smaller than Lithuania by area.
       <li>That are country's  in “Oceania” region.
