@@ -4,7 +4,7 @@
   
  * Fetch the data from an API using the `ApiHook` custom hook.
 
-* On UI a a table is displayed for the fetch data.
+* On UI a table is displayed for the fetch data.
 * The table is  sortable alphabetically by country name (ascending, descending). 
 * The table is filter(s) using column filter with the bellows parameters :
        <ol>
