@@ -1,11 +1,17 @@
 # React Country List Table 
 ## Project Description
- This is a React component that fetches and displays a list of countries with their names, regions,
- * and areas in a table format.
- * @returns The `CountryList` component is being returned, which renders a table of country data
- * fetched from an API using the `ApiHook` custom hook. If the data is still loading, a `Loading`
- * component is displayed. If there is no data to display, a message "No Record Found" is displayed.
-   
+ This is a React component that fetches and displays a list of countries with their names, regions,and area.
+  
+ * Fetch the data from an API using the `ApiHook` custom hook.
+
+* On UI a a table is displayed for the fetch data.
+* The table is  sortable alphabetically by country name (ascending, descending). 
+* The table is filter(s) using column filter with the bellows parameters :
+       <ol>
+     <li>That are country's smaller than Lithuania by area.
+      <li>That are country's  in “Oceania” region.
+      </ol>
+
 ## Framework and Languages 
 - React
 - TypeScript
